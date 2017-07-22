@@ -1,0 +1,115 @@
+	<style>
+		@media print, projection, screen {
+			body, div, h1 {
+				font-family:'Lucida Grande','Segoe UI',Verdana,Arial,Sans-serif;
+			  margin: 0; 
+			  padding: 0;
+			}
+			body {
+				background-color:#fff; 
+				color:#333; 
+				font-size:medium;
+				margin: 0; 
+				padding: 0;
+			}
+			h1 {
+				font-size:x-large; 
+				font-weight:400; 
+				margin: 0;
+			}
+			#main {
+				width: 800px; 
+				margin: 10px auto;
+			}
+			table.ann
+			{
+				page-break-inside: avoid;
+				max-width: 12em;
+				margin: 0;
+				padding: 0;
+				margin-top: 0.5em;
+				border-right: 1px solid black; 
+				display: inline-table; 
+				vertical-align: top;
+			}
+			table.ann td
+			{
+				page-break-inside: avoid;
+				padding-right: 0.3em;
+				max-width: 12em;
+			}
+			.text
+			{
+				font-size: large;
+				text-align: center;			
+			}
+			.term
+			{
+				font-size: large;
+				text-align: center;			
+			}
+			.rom
+			{
+				font-size: small;
+				border-top: 1px solid black;
+				max-width: 12em;
+				text-align: center;
+			}
+			.trans
+			{
+				font-size: small;
+				max-width: 12em;
+				border-top: 1px solid black;
+				text-align: center;
+			}
+		}
+		@media print, projection {
+			.noPrint {
+    		display: none;
+			}	
+		}
+	</style>
+
+	<script type="text/javascript">
+	$(function() {		
+		$('#cbTerm').click(function() {
+			if($('#cbTerm').is(':checked')) { 
+				$('.ann').show(); 
+				$('.term').show(); 
+			} else {
+				$('.term').hide();
+				if((! $('#cbRom').is(':checked')) && (! $('#cbTrans').is(':checked'))) $('.ann').hide(); 
+			}
+		});
+		$('#cbRom').click(function() {
+			if($('#cbRom').is(':checked')) { 
+				$('.ann').show(); 
+				$('.rom').show(); 
+			} else {
+				$('.rom').hide();
+				if((! $('#cbTerm').is(':checked')) && (! $('#cbTrans').is(':checked'))) $('.ann').hide(); 
+			}
+		});
+		$('#cbTrans').click(function() {
+			if($('#cbTrans').is(':checked')) { 
+				$('.ann').show(); 
+				$('.trans').show(); 
+			} else {
+				$('.trans').hide();
+				if((! $('#cbTerm').is(':checked')) && (! $('#cbRom').is(':checked'))) $('.ann').hide(); 
+			}
+		});
+		$('.rom').hide();
+	});	
+	</script>
+	
+</head>
+<body>
+	<div id="main">
+		<h1>$$$$TITLE$$$$</h1>
+		<p class="noPrint">
+			Show: 
+			<input type="checkbox" id="cbTerm" checked="checked" /> Term
+			<input type="checkbox" id="cbRom" /> Romanization
+			<input type="checkbox" id="cbTrans" checked="checked" /> Translation
+		</p>
