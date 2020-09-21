@@ -64,10 +64,16 @@ public class Utilities {
         String version = System.getProperty("java.version");
         String[] v = version.split("\\.");
         boolean r = false;
+        //TODO still a bit wrong, will do for now
         if (v.length > 1) {
-            if ((Integer.parseInt(v[0]) >= v1)
-                    && (Integer.parseInt(v[1]) >= v2)) {
-                r = true;
+            final int i = Integer.parseInt(v[0]);
+            if ((i > v1)) {
+                return;
+            }
+            if (i == v1) {
+                if (Integer.parseInt(v[1]) >= v2){
+                    r = true;
+                }
             }
         }
         if (r) {
