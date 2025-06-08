@@ -110,10 +110,18 @@ FLTR (Foreign Language Text Reader) is a specialized tool designed to help langu
 ## Fork History
 This repository was created in July 2017 when the original FLTR project appeared to be abandoned on SourceForge. The code was imported to preserve it and make it available via Git.
 
-The original developers resumed activity in 2021 with FLTR version 1.4.0 and continue to maintain both FLTR and their related project LWT (Learning with Texts).
+The original developers resumed activity and released multiple versions between 2017-2021, culminating in FLTR version 1.4.0 (June 2021). They continue to maintain both FLTR and their related project LWT (Learning with Texts).
+
+### Bug Fixes in This Fork
+This fork contains two bug fixes from 2020 that have NOT been incorporated into the official version 1.4.0:
+1. **NPE fix for missing icons** - Prevents crashes when icon files cannot be loaded
+2. **Java version check fix** - Fixes version comparison for Java 9+ (though the official version removed this check entirely)
+
+### Other GitHub Forks
+- **magnus-ISU/foreign-language-text-reader** - Another GitHub fork with prebuilt JAR files and Linux installation scripts: https://github.com/magnus-ISU/foreign-language-text-reader
 
 ## Development Status
-**This fork is NOT actively maintained.** It exists as a historical archive of the 2017 codebase. 
+**This fork is NOT actively maintained.** It exists as a historical archive of the 2017 codebase with minor bug fixes. 
 
 For active development and support, please use the official FLTR at:
 - https://foreign-language-text-reader.sourceforge.io
