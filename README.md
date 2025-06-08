@@ -36,19 +36,29 @@ FLTR (Foreign Language Text Reader) is a specialized tool designed to help langu
 
 2. Compile the source code:
    ```
-   javac -d bin -sourcepath src src/fltrpackage/Application.java
+   javac -d bin -sourcepath src -cp lib/miglayout-4.0.jar src/fltrpackage/Application.java
    ```
 
-3. Create a runnable JAR file (optional):
+3. Copy resources to the bin directory:
+   ```
+   cp src/fltrpackage/icon128.png bin/fltrpackage/
+   ```
+
+4. Create a runnable JAR file (optional):
    ```
    jar cvfm fltr.jar manifest.txt -C bin .
    ```
 
 ### Running the Application
 1. Run from compiled classes:
-   ```
-   java -cp bin fltrpackage.Application
-   ```
+   - On Linux/Mac:
+     ```
+     java -cp "bin:lib/miglayout-4.0.jar" fltrpackage.Application
+     ```
+   - On Windows:
+     ```
+     java -cp "bin;lib/miglayout-4.0.jar" fltrpackage.Application
+     ```
 
 2. Or run from the JAR file (if created):
    ```
