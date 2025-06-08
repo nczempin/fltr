@@ -10,26 +10,14 @@
 > 
 > This fork is kept as a historical archive and is NOT actively maintained. Users are strongly encouraged to use the official version instead.
 
-## What Problem Does This Solve?
-FLTR (Foreign Language Text Reader) is a specialized tool designed to help language learners read texts in foreign languages. It addresses the challenge of reading comprehension by providing an interactive environment where users can look up unknown words, save vocabulary, and track their learning progress.
+## About FLTR
 
-## Who Is This For?
-- Language learners at intermediate to advanced levels
-- Language teachers creating reading materials for students
-- Self-study language enthusiasts
-- Anyone who wants to improve reading comprehension in a foreign language
+FLTR (Foreign Language Text Reader) helps you do both extensive and intensive reading as part of your foreign language acquisition in an easy and pleasant way.
 
-## Current Implementation Status
-- ✅ Text import and management
-- ✅ Word lookup and vocabulary tracking
-- ✅ Term status tracking (known/unknown/learning)
-- ✅ Language definition management
-- ✅ Fuzzy search capabilities
-- ✅ User preferences and settings
-- 🚧 Modern UI improvements
-- 🚧 Additional language support
-- 📋 Mobile/tablet support
-- 📋 Cloud synchronization
+While reading, you look up unknown words in web dictionaries (online) or locally installed dictionary applications, save vocabulary terms with translations, and track your learning progress. Each term has a learning status (1/"Unknown" to 5/"Known", plus "Ignored" and "Well Known") with associated colors.
+
+For more details about features and usage, please visit the official documentation:
+- **Official Website:** https://foreign-language-text-reader.sourceforge.io
 
 ## Setup Instructions
 
@@ -75,37 +63,6 @@ FLTR (Foreign Language Text Reader) is a specialized tool designed to help langu
    java -jar fltr.jar
    ```
 
-## Project Scope
-
-### What This IS
-- A tool for reading and studying foreign language texts
-- A vocabulary management system for language learners
-- A fork that maintains and improves upon the abandoned original project
-- A desktop Java application for personal language learning
-
-### What This IS NOT
-- Not a translation tool or dictionary (though it helps with vocabulary)
-- Not a language course or complete learning system
-- Not optimized for mobile devices or tablets
-- Not a commercial product with support services
-
-## Repository Structure
-- `src/fltrpackage/` - Main application source code
-  - `Application.java` - Main entry point
-  - `StartFrame.java` - Initial UI frame
-  - `TextFrame.java` - Text reading interface
-  - `TermFrame.java` - Vocabulary management
-  - `Language.java` - Language definition handling
-  - `Text.java` - Text content management
-  - `Term.java` - Vocabulary term representation
-  - Various UI components and utility classes
-
-## Basic Usage
-1. Start the application
-2. Create or select a language definition
-3. Import or create a text in your target language
-4. Click on words you don't know to mark them and add translations
-5. Track your progress as you learn new vocabulary
 
 ## Fork History
 This repository was created in July 2017 when the original FLTR project appeared to be abandoned on SourceForge. The code was imported to preserve it and make it available via Git.
