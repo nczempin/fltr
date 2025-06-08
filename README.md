@@ -1,7 +1,17 @@
 # FLTR: Foreign Language Text Reader
 
+> **⚠️ IMPORTANT NOTICE: This is an UNOFFICIAL fork**
+> 
+> This repository was created in 2017 when the FLTR project appeared to be abandoned. However, the original developers have since resumed maintenance of FLTR.
+> 
+> **For the official, up-to-date version of FLTR, please visit:**
+> - **Official Website:** https://foreign-language-text-reader.sourceforge.io
+> - **Official SourceForge Project:** https://sourceforge.net/projects/foreign-language-text-reader/
+> 
+> This fork is kept as a historical archive and is NOT actively maintained. Users are strongly encouraged to use the official version instead.
+
 ## What Problem Does This Solve?
-FLTR (Foreign Language Text Reader) is a specialized tool designed to help language learners read texts in foreign languages. It addresses the challenge of reading comprehension by providing an interactive environment where users can look up unknown words, save vocabulary, and track their learning progress. This fork maintains and improves upon the original abandoned SourceForge project.
+FLTR (Foreign Language Text Reader) is a specialized tool designed to help language learners read texts in foreign languages. It addresses the challenge of reading comprehension by providing an interactive environment where users can look up unknown words, save vocabulary, and track their learning progress.
 
 ## Who Is This For?
 - Language learners at intermediate to advanced levels
@@ -97,8 +107,13 @@ FLTR (Foreign Language Text Reader) is a specialized tool designed to help langu
 4. Click on words you don't know to mark them and add translations
 5. Track your progress as you learn new vocabulary
 
-## Original Project
-This is a fork of the original FLTR project from SourceForge (https://sourceforge.net/projects/fltr/), which appears to be abandoned. This repository uses Git for version control rather than distributing source code in ZIP files.
+## Fork History
+This repository was created in July 2017 when the original FLTR project appeared to be abandoned on SourceForge. The code was imported to preserve it and make it available via Git.
+
+The original developers resumed activity in 2021 with FLTR version 1.4.0 and continue to maintain both FLTR and their related project LWT (Learning with Texts).
 
 ## Development Status
-This is a maintained fork of an abandoned project. Contributions and feedback are welcome.
+**This fork is NOT actively maintained.** It exists as a historical archive of the 2017 codebase. 
+
+For active development and support, please use the official FLTR at:
+- https://foreign-language-text-reader.sourceforge.io
