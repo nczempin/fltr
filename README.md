@@ -110,7 +110,7 @@ FLTR (Foreign Language Text Reader) is a specialized tool designed to help langu
 ## Fork History
 This repository was created in July 2017 when the original FLTR project appeared to be abandoned on SourceForge. The code was imported to preserve it and make it available via Git.
 
-The original developers resumed activity and released multiple versions between 2017-2021, culminating in FLTR version 1.4.0 (June 2021). They continue to maintain both FLTR and their related project LWT (Learning with Texts).
+The original developers resumed activity in 2020 and released multiple versions (0.8.10, 1.0.0, 1.1.0, 1.2.0, 1.3.0) before releasing FLTR version 1.4.0 in June 2021. They continue to maintain both FLTR and their related project LWT (Learning with Texts).
 
 ### Bug Fixes in This Fork
 This fork contains two bug fixes from 2020 that have NOT been incorporated into the official version 1.4.0:
